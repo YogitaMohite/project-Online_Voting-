@@ -1,24 +1,116 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body{
-  font-family: Arial;
-  background: #f0f0f0;
-  text-align: center;
-  padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.container{
-  background: white;
-  padding: 40px;
-  width: 350px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+/* Background Gradients */
+.home-bg{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding-top: 100px;
 }
 
-.btn{
-  background: #007bff;
-  padding: 10px 20px;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+.vote-bg{
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding-top: 50px;
+}
+
+.result-bg{
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    padding-top: 50px;
+}
+
+/* Home Card */
+.home-card{
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1.2s ease;
+}
+
+.title{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.main-btn, .vote-btn, .back-btn{
+    background: #000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.main-btn:hover,
+.vote-btn:hover,
+.back-btn:hover{
+    background: #444;
+}
+
+/* Candidate cards */
+.vote-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.candidate-card{
+    background: white;
+    width: 170px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    animation: slideUp 0.8s ease;
+}
+
+.avatar{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Results */
+.result-card{
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+    color: #333;
+    animation: fadeIn 1s ease;
+}
+
+.page-heading{
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes slideUp{
+    from{transform: translateY(40px); opacity: 0;}
+    to{transform: translateY(0); opacity: 1;}
 }

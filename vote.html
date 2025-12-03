@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cast Your Vote</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h2>Select Your Candidate</h2>
 
-<div class="candidate">
-    <h3>Candidate A</h3>
-    <button onclick="vote('A')">Vote</button>
-</div>
+<body class="vote-bg">
 
-<div class="candidate">
-    <h3>Candidate B</h3>
-    <button onclick="vote('B')">Vote</button>
-</div>
+    <h2 class="page-heading">Select Your Candidate</h2>
+
+    <div class="vote-container">
+
+        <div class="candidate-card">
+            <img src="https://i.imgur.com/3aXc3gN.png" class="avatar">
+            <h3>Candidate A</h3>
+            <button onclick="vote('A')" class="vote-btn">Vote</button>
+        </div>
+
+        <div class="candidate-card">
+            <img src="https://i.imgur.com/3aXc3gN.png" class="avatar">
+            <h3>Candidate B</h3>
+            <button onclick="vote('B')" class="vote-btn">Vote</button>
+        </div>
+
+    </div>
+
 <script src="js/app.js"></script>
 </body>
 </html>
